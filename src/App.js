@@ -1,8 +1,13 @@
+import Input from "./components/Input";
+import Title from "./components/Title";
+
+
 const App = () => {
   return(
-    
-    <h1>Hello World</h1>
-  
+    <>
+      <Title>Gerador de QRCODE</Title>
+      <Input placeholder='Insira o Link para Gerar o QRCODE'/>
+    </>
   )
 }
 
