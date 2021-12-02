@@ -5,10 +5,10 @@ import './style.css';
 
 const Input = ({placeholder}) => {
     
-    const [text, setText] = useState("")
+    const [text, setText] = useState("https://lucasgabrielmoya-nu.vercel.app/")
 
     return(
-        <main>
+        <>
             <input placeholder={placeholder}
                 onChange={(element)=>{
                     setText(element.target.value)
@@ -17,8 +17,7 @@ const Input = ({placeholder}) => {
             </input>
             <br/>
             <QRCodeCanvas text={text}></QRCodeCanvas>
-            
-        </main>
+        </>
     )
 }
 
